@@ -1,0 +1,12 @@
+name: 'EJS Lint'
+description: 'Check your EJS files templates'
+inputs:
+  folders:  # id of input
+    description: 'Path to the EJS files folder'
+    required: true
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'index.js'
