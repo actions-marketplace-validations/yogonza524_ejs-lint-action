@@ -26,7 +26,7 @@ try {
     filesArray.forEach(file => {
         console.log(`EJS File: ${file}`);
 
-        var text = fs.readFileSync(file).toString('utf-8');
+        var text = fs.readFileSync(`${folder}/${file}`).toString('utf-8');
 
         const validation = ejsLint(`${text}`);
 
