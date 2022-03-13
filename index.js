@@ -7,8 +7,6 @@ regex = new RegExp('[*.ejs]$');
 try {
     const folder = core.getInput('folder');
 
-    // const folder = '.';
-
     console.log(`Folder: ${folder}`);
     const files = fs.readdirSync(folder);
 
