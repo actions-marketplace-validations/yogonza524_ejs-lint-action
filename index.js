@@ -30,7 +30,10 @@ try {
 
         const validation = ejsLint(`${text}`);
 
-        console.log(`Validation: ${validation}`);
+        // console.log(`Validation: ${validation}`);
+        if (validation) {
+            throw new Error(validation);
+        }
 
     });
 } catch(error) {
